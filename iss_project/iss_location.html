@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Where is the ISS?</title>
+
+        <!-- leaflet links css and script -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+        <!-- link to our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- async means load script when page is loading -->
+         <!-- defer means wait til whole html is loaded before script starts running -->
+        <script async defer src="fetch.js"></script>
+    
+    
+    </head>
+    <body>
+
+        <h1>Where is the ISS?</h1>
+
+        <div>
+            <p id = 'time'></p>
+            <p>ISS Latitude: <span id="iss-lat"></span></p>
+            <p>ISS Longitutde:<span id="iss-long"></span></p>
+        </div>
+
+        <div id="iss-map"></div>
+
+        <p>Icon by iss by Viktor Korobkov from Noun Project (CC BY 3.0)</p>
+
+
+    </body>
+</html>

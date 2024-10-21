@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interval</title>
+    </head>
+
+    <body>
+
+    
+<!-- page shows the current time -->
+        <h1>What time is it?</h1>   
+        <p>id="time"</p>   
+
+
+    <script>
+        // function call 
+        let timeElement = document.querySelector('#time')
+        // set interval needs two arguments
+        // like set time out, waits a number of seconds
+        // then calls function
+        setInterval( function() {
+            // code in braces for date and time
+            let date = Date() // make new date object
+            timeElement.innerHTML = date
+        }, 1000 )
+        // common to wait amount of time to show message
+        // if program is paused, no other js works
+        // callback functions let rest of js work while
+        // the time out is counting 
+
+        // same function as above, arrow function
+        setInterval( () => {
+            let date = Date()
+            timeElement.innerHTML = date
+        }, 1000 )
+
+
+
+
+    </script>
+
+
+
+
+    </body>
+</html>
